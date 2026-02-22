@@ -124,38 +124,49 @@ If a slide needs two big ideas, consider splitting it. Each slide should make on
 
 ---
 
+## Aesthetic Direction
+
+The visual language of Cunda presentations is rooted in **elegant restraint**. Illustrations, icons, and decorative elements are conceived in a monochromatic, hand-drawn register — fine lines, deliberate strokes, graphite-and-ink quality. Think of a careful sketch in a professional's notebook: precise but unmistakably human.
+
+The palette of illustrations and icons is primarily **black and white** (`#1A1A1A` on `#F5F5F4`). Color — specifically Cunda Orange — enters as a punctuation mark, not a base coat. This restraint gives the orange far more impact when it appears.
+
+The overall sensibility: professional without being corporate, modern without being cold, handcrafted without being casual.
+
+---
+
 ## Visual Language
 
 ### Icons
 
-When using icons, apply a consistent style across the deck:
-- **Style**: Linear / outline icons. Minimal stroke weight. Clean and geometric.
-- **Good sources**: Lucide, Phosphor, Heroicons, Material Symbols (outlined)
-- **Size**: 24–48px on slides. Larger for featured/hero icons.
-- **Color**: Use a brand color (`#FF5F1F`, `#5762D5`, `#00ADCC`, `#40F99B`) or `#1A1A1A`. Never apply multiple colors to a single icon.
-- **Avoid**: Skeuomorphic, 3D, clipart, or overly decorative icons. Inconsistent styles within the same deck.
-
-### Photography
-
-When slides include photos:
-- **Style**: Modern, candid-professional. Natural light preferred. Avoid obvious stock photo clichés (staged handshakes, pointing at whiteboards).
-- **Treatment**: Full-bleed or contained in a card/shape. If overlaid with text, ensure contrast with a subtle dark scrim or text shadow.
-- **Subject**: People in context, workspaces, technology in use, abstract textures, Santiago / Latin American environments.
-- **Avoid**: Generic corporate stock, low-resolution images, overly filtered or heavily edited imagery.
+- **Style**: Hand-drawn or sketch-quality line icons. Fine, slightly organic stroke weight — not pixel-perfect geometric, not rough. The line should feel considered and deliberate.
+- **Color**: Always `#1A1A1A` (near-black). Reserve orange (`#FF5F1F`) for at most one featured icon per slide — a moment of accent, not a pattern.
+- **Weight**: Consistent thin-to-medium stroke across the deck. Avoid both hairline-thin and heavy-fill styles.
+- **Size**: 24–40px for supporting icons, 48–72px for featured or hero icons.
+- **Avoid**: Digital-flat UI icon sets (Lucide, Material, etc. only work if they can be styled to feel hand-drawn or very fine-line). No 3D, no skeuomorphic, no clipart, no filled/solid icons, no inconsistent styles within a deck.
 
 ### Illustrations & Graphics
 
-- **Style**: Flat, geometric, minimal. Abstract shapes and lines work well for backgrounds and dividers.
-- **Color**: Use brand palette. Monochromatic or two-color illustrations look cleaner than full-color.
-- **Usage**: As supporting visual elements, not decorative filler. Every graphic should add meaning.
+- **Style**: Monochromatic line art. Black ink or graphite on white. Gestural but intentional — not scribbled, not over-rendered.
+- **Technique feel**: Think architectural sketch, scientific illustration, or an elegant editorial drawing. The line does the work; fills and gradients are unnecessary.
+- **Color**: Black (`#1A1A1A`) only. If a single color accent is needed, use orange — applied to one element only, not as a fill.
+- **Usage**: Supporting visual elements that add meaning to the content. A well-placed illustration says what words cannot. Not decorative filler.
+- **Avoid**: Full-color illustrations, gradient-heavy graphics, flat-digital vector shapes, any style that feels corporate or generic.
+
+### Photography
+
+- **Style**: Editorial and understated. Prefer images that are desaturated, near-monochromatic, or treated with subtle contrast — so they coexist with the hand-drawn aesthetic without competing in color.
+- **Subject**: People in natural, unposed moments; workspaces with texture and character; abstract material textures (paper, concrete, light); technology used by human hands. Santiago and Latin American environments welcome.
+- **Treatment**: Full-bleed or contained in a card/shape. Black-and-white or low-saturation treatment strongly preferred. If overlaid with text, use a light or dark scrim for legibility — keep it subtle.
+- **Avoid**: Vivid, oversaturated stock photography; obvious clichés (handshakes, pointing at whiteboards, forced smiles). Color photography should only be used when it genuinely serves the slide.
 
 ### Data Visualization
 
-- Use clean, minimal chart styles. No 3D charts.
+- Clean, minimal chart styles. No 3D, no shadows, no decorative chrome.
 - Prefer bar, line, and donut charts. Avoid pie charts with more than 4 segments.
-- Label data directly on the chart where possible (avoid external legends when you can).
+- Label data directly on the chart where possible — avoid external legends when content allows.
 - Color sequence: Violet → Cyan → Green → Orange → Red
-- Highlight the key insight — e.g., bold the most important bar in orange.
+- Highlight the one key insight: make it orange or bold. Everything else recedes.
+- Chart lines and axes should be as thin and unobtrusive as possible.
 
 ---
 
@@ -216,12 +227,14 @@ Prohibida su reproducción total o parcial sin autorización por escrito de Cund
 
 ## Brand Voice in Design
 
-Cunda's visual communication should feel: **confident, warm, modern, purposeful**.
+Cunda's visual communication should feel: **confident, warm, elegant, purposeful**.
 
-- Confident: Strong hierarchy, decisive use of color, no clutter.
-- Warm: Human photography, accessible typography, not cold or purely corporate.
-- Modern: Clean design, geometric elements, minimal ornamentation.
+- Confident: Strong hierarchy, decisive and sparing use of color, no clutter.
+- Warm: Human photography and hand-drawn elements that feel made by a person, not generated by a machine.
+- Elegant: Restraint is a design choice. The fewer colors in an illustration, the fewer icons on a slide, the more intentional it looks. White space and fine lines communicate taste.
 - Purposeful: Every element earns its place. If it doesn't add meaning, remove it.
+
+The reference for this aesthetic: professional-grade craftsmanship, where the beauty is in precision and economy of means. Black and white as the default palette for all drawn elements; orange as the single exception that carries the brand's energy.
 
 ---
 
@@ -232,7 +245,8 @@ Cunda's visual communication should feel: **confident, warm, modern, purposeful*
 - Logo on every slide
 - Consistent font usage: Georgia for titles, Arial for body
 - Text color `#1A1A1A`, not white on light backgrounds
-- Icons consistent in style throughout the deck
+- Icons and illustrations are monochromatic (black) and consistent in style throughout the deck
+- Color used sparingly in visuals — orange as accent, everything else B&W
 - Charts labeled clearly with the correct color sequence
 - Whitespace: does the slide breathe?
 - Confidentiality notice in footer (proposals)
