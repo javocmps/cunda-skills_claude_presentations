@@ -42,16 +42,26 @@ This is a **design system**, not a template library. Use these parameters to com
 
 | Name | Hex | Usage |
 |------|-----|-------|
-| **Background** | `#F5F5F4` | Primary slide background |
-| **Surface** | `#F8FAFC` | Cards, panels, secondary areas |
-| **Text** | `#1A1A1A` | All body text and headlines |
-| **Muted** | `#666666` | Secondary text, captions, footers |
-| **Border** | `#E5E5E5` | Subtle dividers and card outlines |
+| **Background** | `#f5f5f4` | Primary slide background — warm off-white |
+| **Background Alt** | `#eeede9` | Alternate slide background (~3% darker, same warm family) |
+| **Card** | `#fafafa` | Cards, panels, elevated surfaces |
+| **Text** | `#1a1a1a` | All body text and headlines |
+| **Muted** | `#595959` | Secondary text, captions, footers |
+| **Border** | `#ebebeb` | Subtle dividers and card outlines |
 | **White** | `#FFFFFF` | Text on colored backgrounds |
 
 ### Background Rule (Non-Negotiable)
 
-Slides ALWAYS use **white or light backgrounds** (`#F5F5F4`, `#F8FAFC`, subtle off-whites, or light gradients). The ONLY exception is section divider slides, which may use a full-bleed brand color.
+Slides ALWAYS use **warm light backgrounds**. The palette has two tones that can alternate across slides or sections:
+
+- **Primary**: `#f5f5f4` — warm off-white (stone family)
+- **Alternate**: `#eeede9` — slightly deeper warm tone, same family
+
+These two can alternate to create visual rhythm between sections, the same way sections alternate on the website.
+
+**Never use `#F8FAFC`** (Tailwind's `slate-50`) — it carries a cool blue undertone that clashes with the warm palette.
+
+The ONLY exception to warm backgrounds is section divider slides, which may use a full-bleed brand color (e.g., Cunda Orange).
 
 **Never** use dark backgrounds for content slides.
 
@@ -68,22 +78,35 @@ Slides ALWAYS use **white or light backgrounds** (`#F5F5F4`, `#F8FAFC`, subtle o
 
 ### Fonts
 
-| Role | Primary | Fallback (PowerPoint) |
-|------|---------|----------------------|
-| Headlines & Titles | Cormorant Semi-Bold | **Georgia Bold** |
-| Body & UI Text | Lato Regular | **Arial Regular** |
-| Emphasis | Lato Medium | **Arial Bold** |
+| Role | Typeface | Character | Fallback (PowerPoint) |
+|------|----------|-----------|----------------------|
+| Display / Headlines | **PT Serif** | Editorial authority, elegance, warmth | Georgia Bold |
+| Body / UI / Captions | **Geist** (Vercel) | Neutral, geometric, high legibility | Arial Regular |
+| Emphasis | **Geist** Medium/SemiBold | Same family, weight contrast | Arial Bold |
+
+PT Serif is the editorial voice — used for H1, H2, H3 and any large display text. Geist handles everything else: body copy, labels, captions, buttons, navigation. The contrast between a warm serif headline and a clean geometric body is intentional and central to the Cunda aesthetic.
 
 ### Hierarchy
 
 | Level | Font | Size Range | Color |
 |-------|------|-----------|-------|
-| Cover Title | Georgia Bold | 52–64pt | `#1A1A1A` |
-| Slide Title | Georgia Bold | 30–38pt | `#1A1A1A` |
-| Section Label / Eyebrow | Arial Bold, uppercase | 12–14pt | `#FF5F1F` or `#666666` |
-| Subtitle / Lead | Arial Bold | 18–24pt | `#1A1A1A` |
-| Body Text | Arial Regular | 15–18pt | `#1A1A1A` |
-| Captions / Footer | Arial Regular | 10–12pt | `#666666` |
+| Cover Title | PT Serif Bold | 52–64pt | `#1A1A1A` (or gradient on key word — see below) |
+| Slide Title | PT Serif Bold | 30–38pt | `#1A1A1A` |
+| Section Label / Eyebrow | Geist SemiBold, uppercase | 11–13pt | `#FF5F1F` or `#595959` |
+| Subtitle / Lead | Geist SemiBold | 18–24pt | `#1A1A1A` |
+| Body Text | Geist Regular | 15–18pt | `#1A1A1A` |
+| Captions / Footer | Geist Regular | 10–12pt | `#595959` |
+
+### Title Gradient (Optional Accent)
+
+For cover slides or high-impact headings, a single word or short phrase can use the brand gradient to add warmth and energy:
+
+```
+linear-gradient(90deg, #ff3131, #ff914d, #ff914d)
+applied as: bg-clip-text / text-transparent
+```
+
+Use this selectively — at most once per deck, on the most important headline. It should feel like a highlight, not a pattern.
 
 **Alignment**: Left-align body text. Centered text works for short, isolated headings (covers, section dividers, pull quotes). Avoid centered body paragraphs.
 
@@ -176,17 +199,17 @@ Use cards and panels to group related content. Keep them light and clean.
 
 ### Standard Card
 ```
-Background: #F8FAFC
-Border: 1px solid #E5E5E5
+Background: #fafafa
+Border: 1px solid #ebebeb
 Border-radius: 12–16px
 Padding: 20–28px
 ```
 
 ### Accent Card (with brand color indicator)
 ```
-Background: #F5F5F4 or #F8FAFC
+Background: #fafafa
 Border-left: 4px solid [brand color]
-Border: 1px solid #E5E5E5
+Border: 1px solid #ebebeb
 Border-radius: 12px
 ```
 
@@ -210,7 +233,7 @@ Think of these as intentions, not rigid formats. The layout should serve the con
 
 **Quote / Testimonial**: One strong quote, attributed clearly. Large type, generous whitespace. Can break from the standard layout to feel editorial.
 
-**Closing / Contact**: Ends the deck with energy. Include the "¡Que Cunda!" sign-off (Georgia Bold Italic), contact info, and a clear call to action.
+**Closing / Contact**: Ends the deck with energy. Include the "¡Que Cunda!" sign-off (PT Serif Bold Italic, large), contact info, and a clear call to action.
 
 ---
 
@@ -243,7 +266,7 @@ The reference for this aesthetic: professional-grade craftsmanship, where the be
 - White or light backgrounds on content slides (not dark)
 - Orange accent present on every slide (one element is enough)
 - Logo on every slide
-- Consistent font usage: Georgia for titles, Arial for body
+- Consistent font usage: PT Serif for titles and display text, Geist for body and UI
 - Text color `#1A1A1A`, not white on light backgrounds
 - Icons and illustrations are monochromatic (black) and consistent in style throughout the deck
 - Color used sparingly in visuals — orange as accent, everything else B&W
